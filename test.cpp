@@ -1,6 +1,18 @@
 #include <gtest/gtest.h>
 #include "LibraryCode.hpp"
 
+TEST(Battleship, GivenBoardFireFunctionReturnSplashWhenDotIsHit){
+    std::vector<std::vector<char>> board{
+        {'.', '.', '.', '*', '*'},
+        {'.', '*', '.', '.', '.'},
+        {'.', '*', '.', '.', '.'},
+        {'.', '*', '.', '.', '.'},
+        {'.', '*', '*', '*', '.'}
+    };
+    std::string result1 = fire(board, "A1");
+    EXPECT_EQ(result1, "Splash");
+}
+
 TEST(Validation, GivenVectorOfNumbersIfIntervalIsInVectorReturnsSmile){
     std::string result1 = faceInterval({1, 2, 5, 8, 3, 9});
     std::string result2 = faceInterval({5, 2, 8, 3, 11});
