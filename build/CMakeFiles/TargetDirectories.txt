@@ -1,0 +1,4 @@
+/home/kacper/Pulpit/Algorithms/Algorithms/build/CMakeFiles/rebuild_cache.dir
+/home/kacper/Pulpit/Algorithms/Algorithms/build/CMakeFiles/edit_cache.dir
+/home/kacper/Pulpit/Algorithms/Algorithms/build/CMakeFiles/mainApp.dir
+/home/kacper/Pulpit/Algorithms/Algorithms/build/CMakeFiles/algorithmLib.dir
