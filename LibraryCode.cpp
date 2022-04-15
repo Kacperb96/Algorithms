@@ -20,3 +20,15 @@ std::string fire(std::vector<std::vector<char>> matrix, std::string coordinates)
 
     return result;
 }
+
+std::vector< std::vector<int> > squarePatch(int n) {
+	std::vector<std::vector<int>> board;
+    for(auto i = 0; i < n; i++){
+        board.push_back(std::vector<int>());
+        for(auto j = 0; j < n; j++){
+            board[i].push_back(n);
+        }
+    }
+
+    return board;
+}
