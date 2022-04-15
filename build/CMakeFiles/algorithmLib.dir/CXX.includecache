@@ -11,4 +11,12 @@ LibraryCode.hpp
 /home/kacper/Pulpit/Algorithms/Algorithms/LibraryCode.hpp
 
 /home/kacper/Pulpit/Algorithms/Algorithms/LibraryCode.hpp
+algorithm
+-
+cmath
+-
+vector
+-
+string
+-
 

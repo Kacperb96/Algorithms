@@ -1,3 +1,7 @@
 #pragma once
+#include <algorithm>
+#include <cmath>
+#include <vector>
+#include <string>
 
-int sum(int, int);
+std::string faceInterval(std::vector<int>);

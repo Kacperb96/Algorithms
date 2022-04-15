@@ -1,9 +1,11 @@
 #include <gtest/gtest.h>
 #include "LibraryCode.hpp"
 
-TEST(TestSuite, TestSample){
-    int s = sum(2, 4);
-    ASSERT_EQ(6, s);
+TEST(Validation, GivenVectorOfNumbersIfIntervalIsInVectorReturnsSmile){
+    std::string result1 = faceInterval({1, 2, 5, 8, 3, 9});
+    std::string result2 = faceInterval({5, 2, 8, 3, 11});
+    EXPECT_EQ(result1, ":)");
+    EXPECT_EQ(result2, ":(");
 }
 
 int main(int argc, char** argv){

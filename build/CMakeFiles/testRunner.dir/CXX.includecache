@@ -7,6 +7,14 @@
 #IncludeRegexTransform: 
 
 /home/kacper/Pulpit/Algorithms/Algorithms/LibraryCode.hpp
+algorithm
+-
+cmath
+-
+vector
+-
+string
+-
 
 /home/kacper/Pulpit/Algorithms/Algorithms/test.cpp
 gtest/gtest.h
