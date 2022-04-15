@@ -459,3 +459,31 @@ Parsed CXX implicit link information from above output:
   implicit fwks: []
 
 
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/kacper/Pulpit/Algorithms/Algorithms/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_0fb25/fast && /usr/bin/make -f CMakeFiles/cmTC_0fb25.dir/build.make CMakeFiles/cmTC_0fb25.dir/build
+make[1]: Wejście do katalogu '/home/kacper/Pulpit/Algorithms/Algorithms/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0fb25.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_0fb25.dir/CheckIncludeFile.c.o   -c /home/kacper/Pulpit/Algorithms/Algorithms/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_0fb25
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0fb25.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_0fb25.dir/CheckIncludeFile.c.o  -o cmTC_0fb25 
+make[1]: Opuszczenie katalogu '/home/kacper/Pulpit/Algorithms/Algorithms/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/kacper/Pulpit/Algorithms/Algorithms/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e1ec2/fast && /usr/bin/make -f CMakeFiles/cmTC_e1ec2.dir/build.make CMakeFiles/cmTC_e1ec2.dir/build
+make[1]: Wejście do katalogu '/home/kacper/Pulpit/Algorithms/Algorithms/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e1ec2.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_e1ec2.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_e1ec2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e1ec2.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_e1ec2.dir/CheckFunctionExists.c.o  -o cmTC_e1ec2  -lpthread 
+make[1]: Opuszczenie katalogu '/home/kacper/Pulpit/Algorithms/Algorithms/build/CMakeFiles/CMakeTmp'
+
+
+
