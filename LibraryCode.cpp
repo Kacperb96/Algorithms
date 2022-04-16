@@ -73,3 +73,13 @@ int mySub(int a, int b) {
     }
     return std::abs(a);
 }
+
+std::string binary(int dec) {
+	std::string bin;
+    if(dec == 0) return 0;
+    else{
+        while(dec > 0){bin = (dec % 2 == 0 ? "0" : "1") + bin; dec /= 2;}
+    }
+
+    return bin;
+}

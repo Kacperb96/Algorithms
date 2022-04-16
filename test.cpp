@@ -79,6 +79,12 @@ TEST(Bitoperation, SubtractWithoutSubtract){
     ASSERT_EQ(mySub(0, 0), 0);
 }
 
+TEST(Bitoperation, ConvertaNumberToBase2){
+    ASSERT_EQ(binary(1), "1");
+    ASSERT_EQ(binary(5), "101");
+    ASSERT_EQ(binary(10), "1010");
+}
+
 int main(int argc, char** argv){
     testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();

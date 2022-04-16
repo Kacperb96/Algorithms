@@ -12,3 +12,4 @@ std::vector<int> sortArray(std::vector<int>);
 int fibonacci(int);
 std::pair<int, int> XOR(int, int);
 int mySub(int, int);
+std::string binary(int);
