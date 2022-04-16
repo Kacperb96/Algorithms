@@ -43,6 +43,20 @@ TEST(Array, FunctionThatTakesAnIntegerAndOutputsAnnxnSquareSolelyConsistingOfThe
     EXPECT_EQ(board5n, resultFor5n);
 }
 
+TEST(Sorting, GivenUnsortedVectorReturnsSortedVector){
+    std::vector<int> vec1 {2, -5, 1, 4, 7, 8};
+    std::vector<int> vec2 {23, 15, 34, 17, -28};
+    std::vector<int> vec3 {38, 57, 45, 18, 47, 39};
+    
+    std::vector<int> sortedVec1 {-5, 1, 2, 4, 7, 8};
+    std::vector<int> sortedVec2 {-28, 15, 17, 23, 34};
+    std::vector<int> sortedVec3 {18, 38, 39, 45, 47, 57};
+
+    EXPECT_EQ(sortArray(vec1), sortedVec1);
+    EXPECT_EQ(sortArray(vec2), sortedVec2);
+    EXPECT_EQ(sortArray(vec3), sortedVec3);
+}
+
 int main(int argc, char** argv){
     testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();

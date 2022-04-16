@@ -32,3 +32,18 @@ std::vector< std::vector<int> > squarePatch(int n) {
 
     return board;
 }
+
+std::vector<int> sortArray(std::vector<int> arr) {
+	int tmp{ 0 };
+    for(auto i = 0; i < arr.size(); i++){
+        for(auto j = i; j < arr.size(); j++){
+            if(arr[j] < arr[i]){
+                tmp = arr[j];
+                arr[j] = arr[i];
+                arr[i] = tmp;
+            }
+        }
+    }
+    
+    return arr;
+}
