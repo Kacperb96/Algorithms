@@ -64,3 +64,12 @@ std::pair<int, int> XOR(int a, int b) {
     }
     return std::make_pair(a, b);
 }
+
+int mySub(int a, int b) {
+	while (b != 0){
+        int c = (~a) & b;
+        a ^= b;
+        b = c << 1;
+    }
+    return std::abs(a);
+}

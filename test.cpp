@@ -73,6 +73,12 @@ TEST(Bitoperation, XORSwapAlgorithm){
     EXPECT_EQ(XOR(12345, 890412), pair3);
 }
 
+TEST(Bitoperation, SubtractWithoutSubtract){
+    ASSERT_EQ(mySub(5, 9), 4);
+    ASSERT_EQ(mySub(10, 30), 20);
+    ASSERT_EQ(mySub(0, 0), 0);
+}
+
 int main(int argc, char** argv){
     testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();
