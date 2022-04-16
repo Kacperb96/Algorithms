@@ -57,6 +57,12 @@ TEST(Sorting, GivenUnsortedVectorReturnsSortedVector){
     EXPECT_EQ(sortArray(vec3), sortedVec3);
 }
 
+TEST(Recursion, GivenIntigerReturnsSumOfFibonacci){
+    EXPECT_EQ(fibonacci(3), 3);
+    EXPECT_EQ(fibonacci(7), 21);
+    EXPECT_EQ(fibonacci(12), 233);
+}
+
 int main(int argc, char** argv){
     testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();

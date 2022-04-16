@@ -47,3 +47,11 @@ std::vector<int> sortArray(std::vector<int> arr) {
     
     return arr;
 }
+
+
+int fibonacci(int num) {
+    int result{ 0 };
+    (num == 0 || num == 1) ? result += 1 : result += fibonacci(num - 2) + fibonacci(num - 1);
+
+    return result;
+}
