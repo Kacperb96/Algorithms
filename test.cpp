@@ -63,6 +63,16 @@ TEST(Recursion, GivenIntigerReturnsSumOfFibonacci){
     EXPECT_EQ(fibonacci(12), 233);
 }
 
+TEST(Bitoperation, XORSwapAlgorithm){
+    std::pair<int, int> pair1 {41, 10};
+    std::pair<int, int> pair2 {420, 69};
+    std::pair<int, int> pair3 {890412, 12345};
+
+    EXPECT_EQ(XOR(10, 41), pair1);
+    EXPECT_EQ(XOR(69, 420), pair2);
+    EXPECT_EQ(XOR(12345, 890412), pair3);
+}
+
 int main(int argc, char** argv){
     testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();

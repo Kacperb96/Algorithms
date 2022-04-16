@@ -55,3 +55,12 @@ int fibonacci(int num) {
 
     return result;
 }
+
+std::pair<int, int> XOR(int a, int b) {
+    if(a != b){
+        a ^= b;
+        b ^= a;
+        a ^= b;
+    }
+    return std::make_pair(a, b);
+}
