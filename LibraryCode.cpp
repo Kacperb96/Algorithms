@@ -83,3 +83,16 @@ std::string binary(int dec) {
 
     return bin;
 }
+
+std::string caesarCipher(std::string s, int n) {
+	std::string result;
+    int k = std::abs(n % 26);
+
+    for(auto i = 0; i < s.length(); i++){
+        ((s[i] < 'a' || s[i] > 'z') && (s[i] < 'A' || s[i] > 'Z')) ? result += s[i] :
+        ((s[i] + k >= 'a' && s[i] + k <= 'z') || (s[i] + k >= 'A' && s[i] + k <= 'Z') ? result += s[i] + k :
+        ((s[i] + k > 'z') || (s[i] + k > 'Z') ? result += s[i] - 26 + k : result += s[i] + 26 + k));
+    }
+
+    return result;
+}

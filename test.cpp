@@ -85,6 +85,12 @@ TEST(Bitoperation, ConvertaNumberToBase2){
     ASSERT_EQ(binary(10), "1010");
 }
 
+TEST(Cryptography, CaesarsCipher){
+    ASSERT_EQ(caesarCipher("middle-Outz", 2), "okffng-Qwvb");
+    ASSERT_EQ(caesarCipher("Always-Look-on-the-Bright-Side-of-Life", 5), "Fqbfdx-Qttp-ts-ymj-Gwnlmy-Xnij-tk-Qnkj");
+    ASSERT_EQ(caesarCipher("A friend in need is a friend indeed", 20), "U zlcyhx ch hyyx cm u zlcyhx chxyyx"); 
+}
+
 int main(int argc, char** argv){
     testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();
