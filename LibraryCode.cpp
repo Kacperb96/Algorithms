@@ -94,3 +94,12 @@ std::string caesarCipher(std::string s, int k) {
 	}
 	return s;
 }
+
+int letterDistance(std::string str1, std::string str2) {
+	int distance = 0; 
+	for (int i = 0; i < str1.length() && i < str2.length(); i++) {
+		distance += abs(str1[i] - str2[i]); 
+	}
+	distance += abs(str1.length() - str2.length()); 
+	return distance; 
+}

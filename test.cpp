@@ -91,6 +91,12 @@ TEST(Cryptography, CaesarsCipher){
     ASSERT_EQ(caesarCipher("A friend in need is a friend indeed", 20), "U zlcyhx ch hyyx cm u zlcyhx chxyyx"); 
 }
 
+TEST(Strings, GivenTwoWordsTheLetterDistanceIsCalculatedByTakingTheAbsoluteValueOfTheDifferenceInCharacterCodes){
+    ASSERT_EQ(letterDistance("house", "fly"), 11);
+    ASSERT_EQ(letterDistance("abcde", "a"), 4);
+    ASSERT_EQ(letterDistance("abcde", "Abcde"), 32);
+}
+
 int main(int argc, char** argv){
     testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();

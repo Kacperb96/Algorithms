@@ -14,3 +14,4 @@ std::pair<int, int> XOR(int, int);
 int mySub(int, int);
 std::string binary(int);
 std::string caesarCipher(std::string, int);
+int letterDistance(std::string, std::string);
