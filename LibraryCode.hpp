@@ -15,3 +15,5 @@ int mySub(int, int);
 std::string binary(int);
 std::string caesarCipher(std::string, int);
 int letterDistance(std::string, std::string);
+bool isPrime(int);
+int countElem(std::vector<int>&, bool(*ptr)(int));

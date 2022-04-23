@@ -97,6 +97,31 @@ TEST(Strings, GivenTwoWordsTheLetterDistanceIsCalculatedByTakingTheAbsoluteValue
     ASSERT_EQ(letterDistance("abcde", "Abcde"), 32);
 }
 
+TEST(Numbers, CountPrimeNumbers){
+    std::vector<int> A;
+    for(auto i = 1; i <= 100; i++){
+        A.push_back(i);
+    }
+
+    auto lambdaPrime = [](int n){
+        if (n == 0 || n == 1) {
+            return false;
+        }
+
+        for (auto i = 2; i <= n/2; ++i) {
+            if (n % i == 0) {
+                return false;
+                break;
+            }
+        }
+
+        return true;
+    };
+
+    ASSERT_EQ(countElem(A, isPrime), 25);
+    ASSERT_EQ(std::count_if(std::begin(A), std::end(A), lambdaPrime), 25);
+}
+
 int main(int argc, char** argv){
     testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();

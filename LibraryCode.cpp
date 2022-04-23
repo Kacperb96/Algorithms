@@ -103,3 +103,27 @@ int letterDistance(std::string str1, std::string str2) {
 	distance += abs(str1.length() - str2.length()); 
 	return distance; 
 }
+
+bool isPrime(int n){
+    if (n == 0 || n == 1) {
+        return false;
+    }
+
+  for (auto i = 2; i <= n/2; ++i) {
+    if (n % i == 0) {
+      return false;
+      break;
+    }
+  }
+
+  return true;
+}
+ 
+int countElem(std::vector<int>& A, bool(*ptr)(int)){
+    int counter{ 0 };
+    for(auto i : A){
+        if(ptr(i)) counter ++;
+    }
+
+    return counter;
+}
